@@ -128,7 +128,7 @@ def train_simple_predictor(df)
     return model
 
 # ---------------------- UI ----------------------
-st.title('🚀 Asta Master - Consulente Live per l'Asta del Fantacalcio')
+st.title("🚀 Asta Master - Consulente Live per l'Asta del Fantacalcio")
 st.markdown('Strumento interattivo per suggerire acquisti durante la tua asta. Carica il file Excel con i giocatori o usa il dataset di esempio.')
 
 col1, col2 = st.columns([2,1])
@@ -297,3 +297,4 @@ st.markdown('Buona asta! Se vuoi, posso adattare il codice per')
 st.markdown('- aggiungere scraping reale da siti italiani di fantacalcio
 - migliorare il modello predittivo
 - aggiungere notifiche sonore o via Telegram quando un giocatore diventa caldo')
+
