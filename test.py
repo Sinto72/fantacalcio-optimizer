@@ -135,7 +135,7 @@ col1, col2 = st.columns([2,1])
 with col2
     st.header('Importa dati')
     uploaded = st.file_uploader('Carica il file Excel (giocatori.xlsx)', type=['xlsx','xls','csv'])
-    use_example = st.button('Usa dataset d'esempio (se incluso)')
+    use_example = st.button("Usa dataset d'esempio (se incluso)")
 
 with col1
     if uploaded is not None
@@ -297,5 +297,6 @@ st.markdown('Buona asta! Se vuoi, posso adattare il codice per')
 st.markdown('- aggiungere scraping reale da siti italiani di fantacalcio
 - migliorare il modello predittivo
 - aggiungere notifiche sonore o via Telegram quando un giocatore diventa caldo')
+
 
 
