@@ -24,7 +24,7 @@ from bs4 import BeautifulSoup
 import time
 import math
 
-st.set_page_config(page_title=Asta Master, layout=wide)
+st.set_page_config(page_title="Asta Master", layout="wide")
 
 # ---------------------- Helpers ----------------------
 @st.cache_data
@@ -297,6 +297,7 @@ st.markdown('Buona asta! Se vuoi, posso adattare il codice per')
 st.markdown('- aggiungere scraping reale da siti italiani di fantacalcio
 - migliorare il modello predittivo
 - aggiungere notifiche sonore o via Telegram quando un giocatore diventa caldo')
+
 
 
 
