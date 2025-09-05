@@ -142,7 +142,7 @@ with col1
         df = load_data_from_excel(uploaded)
         st.success('File caricato con successo')
     else
-        st.info('Nessun file caricato usa il button Usa dataset d'esempio oppure carica il tuo Excel.')
+        st.info("Nessun file caricato usa il button Usa dataset d'esempio oppure carica il tuo Excel.")
         # minimal fallback mostra istruzioni
         df = None
 
@@ -214,7 +214,7 @@ with left
     st.subheader('Suggerimento squadra ottimizzata')
     suggested = suggest_team(df, budgetaggressiveness, roles_counts)
     if not suggested.empty
-        st.write(f'Budget iniziale {budget.2f} — budget simulato (modificato dall'aggressività) {budgetaggressiveness.2f}')
+        st.write(f"Budget iniziale {budget.2f} — budget simulato (modificato dall'aggressività) {budgetaggressiveness.2f}")
         st.dataframe(suggested[['Nome','Squadra','Ruolo','Prezzo','Media','Titolare','Score']].sort_values(by='Score', ascending=False))
         st.write(f'Totale spesa simulata {suggested.Prezzo.sum().2f} — Giocatori selezionati {len(suggested)}')
     else
@@ -297,4 +297,5 @@ st.markdown('Buona asta! Se vuoi, posso adattare il codice per')
 st.markdown('- aggiungere scraping reale da siti italiani di fantacalcio
 - migliorare il modello predittivo
 - aggiungere notifiche sonore o via Telegram quando un giocatore diventa caldo')
+
 
